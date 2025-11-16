@@ -25,6 +25,15 @@ public class PlayerMovesCam : MonoBehaviour
         MovePlayer();
     }
 
+    /*void MovimentoBase()
+    {
+        float dirX, dirZ;
+        dirX = Input.GetAxis("Horizontal");
+        dirZ = Input.GetAxis("Vertical");
+
+        GetComponent<Rigidbody>().linearVelocity = new Vector3(dirX, 0, dirZ) * 10f;
+    }*/
+
     void MovePlayer()
     {
         float moveHorizontal, moveVertical;
