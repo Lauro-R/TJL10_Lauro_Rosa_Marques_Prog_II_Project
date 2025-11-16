@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Item
+  - Bullet
+  - Item 1
+  - Item 2
+  - Item 3
   layers:
   - Default
   - TransparentFX
