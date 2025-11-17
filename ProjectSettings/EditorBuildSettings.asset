@@ -8,6 +8,42 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Aulas/001-Animation BlendTree.unity
+    guid: d6760302c39cae44fa1f28491973471a
+  - enabled: 1
+    path: Assets/Scenes/Aulas/002-Terreno.unity
+    guid: 0d8e57a0b8054874cad1bafa99c6724e
+  - enabled: 1
+    path: "Assets/Scenes/Aulas/004-Enum, Singleton, Heran\xE7a, Interface.unity"
+    guid: bd25b8b6741c5ec47a63d7bf36d9967f
+  - enabled: 1
+    path: Assets/Scenes/Aulas/005-Pooling.unity
+    guid: 8b2b14ff012f0fd44ae3ea2fcb3cbcf4
+  - enabled: 1
+    path: "Assets/Scenes/Aulas/006-Repuls\xE3o Attraction.unity"
+    guid: c0737141f3416d04eb071762e2e4200e
+  - enabled: 1
+    path: Assets/Scenes/Aulas/007-HingeJoints.unity
+    guid: e7d5916cd72af2c4cbcbeed2d0f1792a
+  - enabled: 1
+    path: Assets/Scenes/Aulas/008-Scriptable Object.unity
+    guid: d29c242bd61fa7445954f1bef02a9d3f
+  - enabled: 1
+    path: Assets/Scenes/Aulas/009-Observer.unity
+    guid: 83ff03a3f791f21489c35177ccf08fa9
+  - enabled: 1
+    path: Assets/Scenes/Aulas/010 e 014-Navmesh e Camera.unity
+    guid: 4ceeed152b562154eaff47d95c13e608
+  - enabled: 1
+    path: Assets/Scenes/Aulas/011-EntradaSaida de Informacoes.unity
+    guid: 2b73685d4bdcb8941b1a3e5604f12c1d
+  - enabled: 1
+    path: Assets/Scenes/Aulas/012-Criptografia.unity
+    guid: f0efd8510cf6c1b41910312c2623ee91
+  - enabled: 1
+    path: Assets/Scenes/Aulas/013-State Machine.unity
+    guid: eb8b71335071faa4bb802fbad0631c2f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

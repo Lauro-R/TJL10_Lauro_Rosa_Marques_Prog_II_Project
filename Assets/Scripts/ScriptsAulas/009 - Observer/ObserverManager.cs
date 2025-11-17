@@ -62,7 +62,7 @@ public class ObserverManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Backspace))
         {//limpa as informações dentro do minhasFuncoes
-            Morrer = null;
+            //Morrer = null;
         }
     }
     void MensagemMorte()
