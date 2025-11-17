@@ -204,7 +204,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1725503586}
         m_TargetAssemblyTypeName: ControllerIO, Assembly-CSharp
-        m_MethodName: SalvarJson
+        m_MethodName: EscreverArquivo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -985,7 +985,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1725503586}
         m_TargetAssemblyTypeName: ControllerIO, Assembly-CSharp
-        m_MethodName: LerJson
+        m_MethodName: LerArquivo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

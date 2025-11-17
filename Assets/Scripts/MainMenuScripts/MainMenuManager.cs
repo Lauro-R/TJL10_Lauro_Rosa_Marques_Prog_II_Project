@@ -167,7 +167,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void OpenMenu(GameObject menuToOpen)
     {
-        // == significa a variavel da direita é o mesmo da esquerda? se não for ele é false
+        // == significa a variavel da direita é o mesmo da esquerda, se não for ele é false e não executa o set active
         telaMenu.SetActive(menuToOpen == telaMenu);
         telaCredits.SetActive(menuToOpen == telaCredits);
         telaAulas.SetActive(menuToOpen == telaAulas);
@@ -176,7 +176,7 @@ public class MainMenuManager : MonoBehaviour
     public void QuitGame()
         { 
             #if UNITY_EDITOR 
-                UnityEditor.EditorApplication.ExitPlaymode(); //metodo que encerra o jogo se ele estiver em play mode na unity e voce clica sair
+                UnityEditor.EditorApplication.ExitPlaymode(); //metodo que encerra o jogo se ele estiver em play mode na unity e voce clica sair 
             #else
             Application.Quit(); //if colocado fecha o programa se estiver em alguma plataforma.
             #endif
