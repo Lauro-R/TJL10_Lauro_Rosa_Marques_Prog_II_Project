@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class EnemyIdle : Status
 {
-    public EnemyIdle(StateMachine newStateMachine) : base(newStateMachine)
+    public EnemyIdle(StateMachine newStateMachine) : base(newStateMachine)//recebido o valor, passa para o construtor do pai
     {
         Debug.Log("Construtor Enemy Idle");
         this.myStateMachine = newStateMachine;

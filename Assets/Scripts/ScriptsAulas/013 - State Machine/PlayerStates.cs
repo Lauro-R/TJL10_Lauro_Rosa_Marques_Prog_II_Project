@@ -1,22 +1,28 @@
 using UnityEngine;
 
-public class PlayerStates : MonoBehaviour
+public class PlayerStates : StateMachine
 {
     bool trocandoStatus;
-    public enum PlayerStatus { Idle, Walking, Jumping, Frozen, Paralyzed, Normal, Sleep };
-    //Enumerator que permite os estados que a State Machine vai utilizar
+
+    [SerializeField]
+    private Renderer objectRenderer;
+
 
     PlayerStatus status;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        objectRenderer = GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            ChangeStatus(PlayerStatus.Jumping);
+        }
         if (trocandoStatus == false)
         {
             UpdateStatus();
@@ -106,13 +112,17 @@ public class PlayerStates : MonoBehaviour
     void UpdateIdle()
     {
         Debug.Log("State: Idle");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ChangeStatus(PlayerStatus.Jumping);
+        }
     }
     void UpdateWalking()
     {
         Debug.Log("State: Walking");
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            ChangeStatus(PlayerStatus.Jumping);
+            
         }
     }
     void UpdateJumping()
@@ -120,17 +130,27 @@ public class PlayerStates : MonoBehaviour
         Debug.Log("State: Jumping");
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            
+            ChangeStatus(PlayerStatus.Jumping);
         }
     }
     void UpdateFrozen()
     {
         Debug.Log("State: Frozen");
+        if (Input.GetKeyDown(KeyCode.Alpha1)) 
+        {
+            ChangeStatus(PlayerStatus.Frozen);
+        objectRenderer.material.color = Color.blue;
+        }
     }
     void UpdateParalyzed()
     {
         Debug.Log("State: Paralyzed");
-        
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            ChangeStatus(PlayerStatus.Frozen);
+            objectRenderer.material.color = Color.yellow;
+        }
+
     }
     void UpdateNormal()
     {
@@ -141,5 +161,6 @@ public class PlayerStates : MonoBehaviour
         Debug.Log("State: Sleep");
     }
 }
-
+public enum PlayerStatus { Idle, Walking, Jumping, Frozen, Paralyzed, Normal, Sleep };
+//Enumerator que permite os estados que a State Machine vai utilizar
 
